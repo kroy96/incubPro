@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/icons.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>Symphony Coolathon</title>
+</head>
+
+<body data-spy="scroll" data-target="#second-navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            Company Name
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="passMe">
+        <div class="card border-primary">
+            <div class="card-body">
+                <div class="text-center mb-3">
+                    <img src="./assets/images/icons8-password.gif" width="100" />
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Enter Password</label>
+                        <input type="password" class="form-control" name="password" id="password"
+                            placeholder="Password">
+                        <a class="btn btn-primary btn-block mt-4" onclick="checkKey()" href="javascript:void(0)">
+                            Request Access
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="passProtect" style="display: none;">
+
+        <!-- JUMBOTRON SECTION -->
+        <div class="container-fluid px-0 jumbotron-section">
+            <img class="w-100" src="./assets/images/symph-cover.jpeg" alt="">
+        </div>
+
+        <!-- HACKATHON DETAILS -->
+        <div class="hackathon-details-section">
+            <div class="container-fluid">
+                <div class="card shadow-sm">
+                    <span class="right-corner-tag">
+                        Online Hackathon
+                    </span>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-2 text-center">
+                                <img class="" src="./assets/images/logo-img.png" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <h1>
+                                    Symphony Coolathon
+                                </h1>
+                                <p>
+                                    Symphony being the trendsetter in the air-cooler market and a consumer-centric
+                                    brand,
+                                    with its first-ever innovation challenge, wishes to engage with young developers and
+                                    innovators in India.The massive supremacy of Symphony coolers in the residential,
+                                    industrial and commercial segments has made the brand synonymous with ‘cooling’.
+
+                                </p>
+                                <span>
+                                    <i class="fa fa-stopwatch"></i>
+                                    <strong>
+                                        Registration Deadline:
+                                    </strong>
+                                    TBA
+                                </span>
+                                <span class="font-weight-bold">
+                                    <i class="fa fa-rupee-sign"></i>
+                                    Free Registration
+                                </span>
+                                <span class="font-weight-bold">
+                                    <i class="fa fa-users"></i>
+                                    1-5 Member Team
+                                </span>
+                            </div>
+                            <div class="col-lg-2 my-auto">
+                                <a name="" id="" class="btn btn-primary btn-block disabled" href="javascript:void(0)"
+                                    role="button">
+                                    Coming Soon
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span>
+                            Registrations starting soon
+                        </span>
+                        <!-- <span id="countdown_reg_span">
+                            Registration closes in:
+                            <span class="px-0" id="countdown_reg"></span>
+                        </span>
+                        <span id="countdown_idea_span">
+                            Idea Submission closes in:
+                            <span class="px-0" id="countdown_idea"></span>
+                        </span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Nav -->
+        <div class="second-nav-section">
+            <div class="container-fluid">
+                <nav id="second-navbar" class="">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-steps">Step to Follow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-challenges">Challenges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-mentor">Mentor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-jury">Jury</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-prize">Prize</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-partner">Partner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pills-faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <!-- Detailed Section -->
+        <div class="detailed-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-8" data-spy="scroll" data-target="#second-nav" data-offset="0">
+                        <!-- ABOUT -->
+                        <div class="position-relative">
+                            <div class="linker" id="pills-about"></div>
+                            <div class="about-section">
+                                <h3 class="section-heading">
+                                    About
+                                </h3>
+                                <div class="content">
+                                    <p>
+                                        Symphony being the trendsetter in the air-cooler market and a consumer-centric
+                                        brand, with its first-ever innovation challenge, wishes to engage with young
+                                        developers and innovators in India.
+                                    </p>
+                                    <p>
+                                        Since its inception, our air coolers have been an inspiration and a symbol for
+                                        the futuristic and original design. This is probably why we are the most
+                                        recognized and copied air cooler brand in the world. At present, the organized
+                                        market is flooded with at least 25 brands (includes some smaller regional
+                                        players too). If we talk of the entire universe of branded air coolers in India,
+                                        the basic design and technology used are more or less the same, with just a
+                                        handful of outliers, maybe. The competition is getting stiff and the market
+                                        overall is heading towards saturation, in terms of innovation. In such a
+                                        scenario, it becomes crucial to differentiate ourselves from the competition and
+                                        become the most preferred brand when consumers think of air coolers. We are
+                                        looking for some disruptive product ideas on two fronts: Design and Technology.
+                                        It could be something never heard of, or could even be something very common but
+                                        never thought of. The only thing to bear in mind is that it shouldn’t just be
+                                        something good to have. Rather, it needs to be something that addresses some
+                                        consumer tension at a reasonable cost. If the cost of features becomes too high
+                                        then the purpose of being competitive will be lost.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- STEPS TO FOLLOW -->
+                        <div class="position-relative">
+                            <div class="linker" id="pills-steps"></div>
+                            <div class="step-section">
+                                <h3 class="section-heading mb-4">
+                                    Steps to Follow
+                                </h3>
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper pb-5">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="card border-primary">
+                                                <div class="card-body">
+                                                    <div class="text-center">
+                                                        <img
+                                                            src="https://img.icons8.com/ios/50/000000/google-forms.png" />
+                                                        <h5 class="my-2">
+                                                            Step 1 - Registration
+                                                        </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <ul class="text-left">
+                                                        <li>
+                                                            Create credentials, a team name, and add team members if
+                                                            required
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card border-primary">
+                                                <div class="card-body">
+                                                    <div class="text-center">
+                                                        <img
+                                                            src="https://img.icons8.com/external-sbts2018-mixed-sbts2018/50/000000/external-design-design-thinking2-sbts2018-mixed-sbts2018-2.png" />
+                                                        <h5 class="my-2">
+                                                            Step 2 - Design Submission
+                                                        </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <ul class="text-left">
+                                                        <li>
+                                                            Fill in the form on design submission and upload your
+                                                            PDF/PPT document.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="swiper-slide">Slide 3</div> -->
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <!-- <div class="swiper-button-prev"></div> -->
+                                    <!-- <div class="swiper-button-next"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CHALLENGES -->
+                        <div class="position-relative">
+                            <div class="linker" id="pills-challenges"></div>
+                            <div class="challenge-section">
+                                <h3 class="section-heading">
+                                    Challenges
+                                </h3>
+
+                                <div class="row mt-4">
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="card border-primary challenge-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./assets/images/logo-img.png" alt="" width="80">
+                                                    <h5 class="ml-3">
+                                                        DirectX
+                                                    </h5>
+                                                </div>
+                                                <p class="card-text">
+                                                    Symphony is looking forward to having the best of design solutions
+                                                    that are not only too good to be true but also feasible
+                                                    technologically.
+                                                </p>
+
+                                                <a class="d-flex align-items-center" href="javascript:void(0);"
+                                                    data-toggle="modal" data-target="#challenge-1">
+                                                    View More
+                                                    <i class="fa fa-angle-right ml-1" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MENTOR -->
+                        <div class="position-relative">
+                            <div class="linker" id="pills-mentor"></div>
+                            <div class="mentor-section">
+                                <h3 class="section-heading">
+                                    Mentor
+                                </h3>
+
+                                <div class="row px-4 mt-4">
+                                    <div class="col-12 tba-section text-center">
+                                        <h3 class="text-capitalize">
+                                            To be announced
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="row mt-4">
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="card border-primary">
+                                        <div class="card-body text-center">
+                                            <img class="mb-2" src="./assets/images/logo-img.png" alt="" width="100">
+                                            <h5 class="mb-1">Mantor Name</h5>
+                                            <p class="card-text mb-1">
+                                                Mentor Designation
+                                            </p>
+                                            <p class="mb-0">
+                                                <strong>
+                                                    Mentor Company
+                                                </strong>
+                                            </p>
+                                            <a name="" id="" class="btn btn-link" href="#" role="button">
+                                                View Profile
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
+                        <!-- JURY -->
+                        <div class="position-relative">
+                            <div class="linker" id="pills-jury"></div>
+                            <div class="jury-section">
+                                <h3 class="section-heading">
+                                    Jury
+                                </h3>
+
+                                <div class="row px-4 mt-4">
+                                    <div class="col-12 tba-section text-center">
+                                        <h3 class="text-capitalize">
+                                            To be announced
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="row mt-4">
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="card border-primary">
+                                        <div class="card-body text-center">
+                                            <img class="mb-2" src="./assets/images/logo-img.png" alt="" width="100">
+                                            <h5 class="mb-1">Jury Name</h5>
+                                            <p class="card-text mb-1">
+                                                Jury Designation
+                                            </p>
+                                            <p class="mb-0">
+                                                <strong>
+                                                    Jury Company
+                                                </strong>
+                                            </p>
+                                            <a name="" id="" class="btn btn-link" href="#" role="button">
+                                                View Profile
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
+                        <!-- SCHEDULE -->
+                        <div class="position-relative">
+                            <div class="linker" id="pills-schedule"></div>
+                            <div class="schedule-section">
+                                <div class="container-fluid">
+                                    <h3 class="section-heading">
+                                        Schedule
+                                    </h3>
+                                    <div class="row px-4 mt-4">
+                                        <div class="col-12 tba-section text-center">
+                                            <h3 class="text-capitalize">
+                                                To be announced
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row mt-4">
+                                        <script src="https://use.typekit.net/bkt6ydm.js"></script>
+                                        <script>
+                                            try {
+                                                Typekit.load({
+                                                    async: true
+                                                });
+                                            } catch (e) {}
+                                        </script>
+                                        <div class="col-sm-12">
+                                            <ul class="timeline">
+                                                <li class="timeline-item">
+                                                    <div class="timeline-info">
+                                                        <span>Oct 01, 2021</span>
+                                                    </div>
+                                                    <div class="timeline-marker"></div>
+                                                    <div class="timeline-content">
+                                                        <h4 class="timeline-title">Registrations Start</h4>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-item">
+                                                    <div class="timeline-info">
+                                                        <span>Oct 30, 2021</span>
+                                                    </div>
+                                                    <div class="timeline-marker"></div>
+                                                    <div class="timeline-content">
+                                                        <h4 class="timeline-title">Registrations End</h4>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PRIZE -->
+                        <div class="position-relative">
+                            <div class="linker" id="pills-prize"></div>
+                            <div class="prize-section">
+                                <div class="container-fluid">
+                                    <h3 class="section-heading">
+                                        Rewards & Prizes
+                                    </h3>
+
+                                    <div class="row mt-4">
+                                        <div class="col-lg-6 mb-4">
+                                            <div class="card border-primary">
+                                                <span class="winner-type">
+                                                    Winner(s) Prize
+                                                </span>
+                                                <div class="card-body py-4">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                width="80" height="80" viewBox="0 0 172 172"
+                                                                style=" fill:#000000;">
+                                                                <g fill="none" fill-rule="nonzero" stroke="none"
+                                                                    stroke-width="1" stroke-linecap="butt"
+                                                                    stroke-linejoin="miter" stroke-miterlimit="10"
+                                                                    stroke-dasharray="" stroke-dashoffset="0"
+                                                                    font-family="none" font-weight="none"
+                                                                    font-size="none" text-anchor="none"
+                                                                    style="mix-blend-mode: normal">
+                                                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                                    <g fill="#3498db">
+                                                                        <path
+                                                                            d="M49.57304,0c-1.03715,0 -1.87781,0.84103 -1.87781,1.8778c0,1.03715 0.84103,1.8778 1.87781,1.8778h5.13597c0.06432,1.35285 0.18175,3.36626 0.38977,5.85953c-12.91286,0.50424 -21.36658,4.93637 -22.80212,12.07437c-1.48038,7.36072 4.92456,15.20336 16.31809,19.97967c10.93376,4.58373 15.48345,9.50568 17.37472,12.82807c2.35214,3.63736 -0.07717,9.89408 -4.57894,9.52325c-1.59651,-0.34731 -3.34304,-2.10104 -5.05055,-5.07208c-0.51637,-0.89896 -1.66363,-1.20942 -2.56332,-0.69269c-0.89932,0.51674 -1.20942,1.66436 -0.69269,2.56332c2.74685,4.56498 5.10281,6.83719 8.89086,7.02095c4.05964,-0.16796 7.05703,-3.19475 8.18238,-6.86519c4.10227,5.33862 9.28018,9.04056 15.8228,9.7587c6.51579,-0.7152 11.67765,-4.38933 15.77183,-9.69266c1.10844,3.70131 4.11709,6.76395 8.20319,6.93338c3.78878,-0.1845 6.1429,-2.45415 8.89086,-7.02023c0.51674,-0.89896 0.20735,-2.04658 -0.69197,-2.56332c-0.89896,-0.5171 -2.04767,-0.20626 -2.56403,0.69269c-1.7075,2.97104 -3.45404,4.72441 -5.05055,5.07208c-4.50103,0.37193 -6.93218,-5.88663 -4.57895,-9.52325c1.89126,-3.32203 6.44096,-8.24472 17.37472,-12.82808c11.39905,-4.77851 17.80817,-12.62394 16.32743,-19.98613c-1.4348,-7.13396 -9.88544,-11.56404 -22.79279,-12.06791c0.215,-2.55464 0.33584,-4.61737 0.40126,-5.99447h5.13597c1.03715,0 1.87781,-0.84103 1.87781,-1.8778c0,-1.03678 -0.84103,-1.8778 -1.87781,-1.8778zM55.44979,13.36069c0.88536,8.54928 2.71619,20.54667 6.46895,31.37642c-3.18274,-2.37235 -7.13801,-4.55524 -11.85184,-6.5314c-9.52211,-3.99165 -15.18341,-10.33096 -14.08856,-15.77542c0.84052,-4.17909 6.42628,-8.62673 19.47145,-9.06959zM116.53657,13.49493c11.01939,0.38957 18.40288,3.78735 19.46428,9.06385c1.09521,5.44593 -4.57027,11.78803 -14.09789,15.78189c-4.72485,1.98057 -8.6884,4.16966 -11.87481,6.54862c3.76856,-10.81248 5.61351,-22.81384 6.50843,-31.39436zM86,15.98287c0.68777,0 1.37541,0.34577 1.68615,1.03653l3.91712,8.00005l8.75448,1.28274c1.49581,0.16979 2.15104,2.17764 1.0437,3.19715l-6.34261,6.23207l1.49808,8.80328c0.30284,1.48111 -1.42074,2.72519 -2.72985,1.97471l-7.82706,-4.14754l-7.82706,4.14754c-1.31095,0.75121 -3.03195,-0.49433 -2.72985,-1.97471l1.49808,-8.80328l-6.34333,-6.23207c-1.10771,-1.01987 -0.45174,-3.02735 1.0437,-3.19715l8.75447,-1.28274l3.91712,-8.00005c0.31092,-0.69076 0.99909,-1.03653 1.68686,-1.03653zM86,22.11445l-2.66668,5.44535c-0.27233,0.55643 -0.80144,0.94289 -1.4141,1.03294l-5.99232,0.87717l4.34637,4.27028c0.43809,0.43037 0.63768,1.04817 0.53477,1.65385l-1.02289,6.01027l5.33552,-2.82675c0.54981,-0.29144 1.20884,-0.29144 1.75865,0l5.33552,2.82675l-1.02289,-6.01027c-0.10291,-0.60604 0.09632,-1.22383 0.53477,-1.65456l4.34637,-4.26956l-5.99232,-0.87789c-0.61266,-0.08968 -1.14176,-0.47579 -1.4141,-1.03222zM31.54726,61.26911l-4.1784,8.45443l-9.34308,1.35524l6.76038,6.58093l-1.5957,9.2914l8.3568,-4.38729l8.3568,4.38729l-1.5957,-9.2914l6.7611,-6.58093l-9.3438,-1.35524zM140.45274,61.26911l-4.1784,8.45443l-9.3438,1.35524l6.7611,6.58093l-1.5957,9.2914l8.3568,-4.38729l8.3568,4.38729l-1.5957,-9.2914l6.76038,-6.58093l-9.34308,-1.35524zM76.6117,71.62288v4.81008c0,1.8637 1.51649,3.38019 3.38019,3.38019h12.01695c1.8637,0 3.38019,-1.51649 3.38019,-3.38019v-4.81008c-2.84168,1.56344 -5.89325,2.52134 -9.10979,2.85762c-0.18009,0.01544 -0.37766,0.01544 -0.55774,0c-3.21691,-0.33628 -6.26812,-1.29419 -9.10979,-2.85762zM81.47848,83.56876v20.3881h9.04303v-20.3881zM13.52148,97.65014l-4.1784,8.45442l-9.34308,1.35596l6.7611,6.58021l-1.59642,9.2914l8.3568,-4.38657l8.3568,4.38657l-1.5957,-9.2914l6.76038,-6.58021l-9.34308,-1.35596zM158.47851,97.65014l-4.1784,8.45442l-9.34308,1.35596l6.76038,6.58021l-1.5957,9.2914l8.3568,-4.38657l8.35681,4.38657l-1.59642,-9.2914l6.7611,-6.58021l-9.34308,-1.35596zM70.41049,107.71247v6.49336h31.17902v-6.49336zM61.58998,117.96144v30.92204h48.82005v-30.92204zM3.49504,141.27177l5.59034,8.45371c0.4153,0.62809 0.4153,1.4428 0,2.07089l-5.59034,8.45371h14.85949v-9.4888c0,-1.03715 0.84103,-1.87781 1.8778,-1.87781h11.31492v-7.61171zM140.45202,141.27177v7.61171h11.31492c1.03715,0 1.8778,0.84103 1.8778,1.87781v9.4888h14.85949l-5.58963,-8.45371c-0.4153,-0.62809 -0.4153,-1.4428 0,-2.07089l5.58963,-8.45371zM22.11014,152.63837v19.36163h127.77971v-19.36163z">
+                                                                        </path>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="col-9 my-auto">
+                                                            <h3>
+                                                                ₹ 1 Lakh
+                                                            </h3>
+                                                            <h6>
+                                                                + Participation certificates
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <div class="card border-primary">
+                                                <span class="winner-type">
+                                                    1<sup>st</sup> Runner(s)-up Prize
+                                                </span>
+                                                <div class="card-body py-4">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                width="80" height="80" viewBox="0 0 172 172"
+                                                                style=" fill:#000000;">
+                                                                <g fill="none" fill-rule="nonzero" stroke="none"
+                                                                    stroke-width="1" stroke-linecap="butt"
+                                                                    stroke-linejoin="miter" stroke-miterlimit="10"
+                                                                    stroke-dasharray="" stroke-dashoffset="0"
+                                                                    font-family="none" font-weight="none"
+                                                                    font-size="none" text-anchor="none"
+                                                                    style="mix-blend-mode: normal">
+                                                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                                    <g fill="#3498db">
+                                                                        <path
+                                                                            d="M49.57304,0c-1.03715,0 -1.87781,0.84103 -1.87781,1.8778c0,1.03715 0.84103,1.8778 1.87781,1.8778h5.13597c0.06432,1.35285 0.18175,3.36626 0.38977,5.85953c-12.91286,0.50424 -21.36658,4.93637 -22.80212,12.07437c-1.48038,7.36072 4.92456,15.20336 16.31809,19.97967c10.93376,4.58373 15.48345,9.50568 17.37472,12.82807c2.35214,3.63736 -0.07717,9.89408 -4.57894,9.52325c-1.59651,-0.34731 -3.34304,-2.10104 -5.05055,-5.07208c-0.51637,-0.89896 -1.66363,-1.20942 -2.56332,-0.69269c-0.89932,0.51674 -1.20942,1.66436 -0.69269,2.56332c2.74685,4.56498 5.10281,6.83719 8.89086,7.02095c4.05964,-0.16796 7.05703,-3.19475 8.18238,-6.86519c4.10227,5.33862 9.28018,9.04056 15.8228,9.7587c6.51579,-0.7152 11.67765,-4.38933 15.77183,-9.69266c1.10844,3.70131 4.11709,6.76395 8.20319,6.93338c3.78878,-0.1845 6.1429,-2.45415 8.89086,-7.02023c0.51674,-0.89896 0.20735,-2.04658 -0.69197,-2.56332c-0.89896,-0.5171 -2.04767,-0.20626 -2.56403,0.69269c-1.7075,2.97104 -3.45404,4.72441 -5.05055,5.07208c-4.50103,0.37193 -6.93218,-5.88663 -4.57895,-9.52325c1.89126,-3.32203 6.44096,-8.24472 17.37472,-12.82808c11.39905,-4.77851 17.80817,-12.62394 16.32743,-19.98613c-1.4348,-7.13396 -9.88544,-11.56404 -22.79279,-12.06791c0.215,-2.55464 0.33584,-4.61737 0.40126,-5.99447h5.13597c1.03715,0 1.87781,-0.84103 1.87781,-1.8778c0,-1.03678 -0.84103,-1.8778 -1.87781,-1.8778zM55.44979,13.36069c0.88536,8.54928 2.71619,20.54667 6.46895,31.37642c-3.18274,-2.37235 -7.13801,-4.55524 -11.85184,-6.5314c-9.52211,-3.99165 -15.18341,-10.33096 -14.08856,-15.77542c0.84052,-4.17909 6.42628,-8.62673 19.47145,-9.06959zM116.53657,13.49493c11.01939,0.38957 18.40288,3.78735 19.46428,9.06385c1.09521,5.44593 -4.57027,11.78803 -14.09789,15.78189c-4.72485,1.98057 -8.6884,4.16966 -11.87481,6.54862c3.76856,-10.81248 5.61351,-22.81384 6.50843,-31.39436zM86,15.98287c0.68777,0 1.37541,0.34577 1.68615,1.03653l3.91712,8.00005l8.75448,1.28274c1.49581,0.16979 2.15104,2.17764 1.0437,3.19715l-6.34261,6.23207l1.49808,8.80328c0.30284,1.48111 -1.42074,2.72519 -2.72985,1.97471l-7.82706,-4.14754l-7.82706,4.14754c-1.31095,0.75121 -3.03195,-0.49433 -2.72985,-1.97471l1.49808,-8.80328l-6.34333,-6.23207c-1.10771,-1.01987 -0.45174,-3.02735 1.0437,-3.19715l8.75447,-1.28274l3.91712,-8.00005c0.31092,-0.69076 0.99909,-1.03653 1.68686,-1.03653zM86,22.11445l-2.66668,5.44535c-0.27233,0.55643 -0.80144,0.94289 -1.4141,1.03294l-5.99232,0.87717l4.34637,4.27028c0.43809,0.43037 0.63768,1.04817 0.53477,1.65385l-1.02289,6.01027l5.33552,-2.82675c0.54981,-0.29144 1.20884,-0.29144 1.75865,0l5.33552,2.82675l-1.02289,-6.01027c-0.10291,-0.60604 0.09632,-1.22383 0.53477,-1.65456l4.34637,-4.26956l-5.99232,-0.87789c-0.61266,-0.08968 -1.14176,-0.47579 -1.4141,-1.03222zM31.54726,61.26911l-4.1784,8.45443l-9.34308,1.35524l6.76038,6.58093l-1.5957,9.2914l8.3568,-4.38729l8.3568,4.38729l-1.5957,-9.2914l6.7611,-6.58093l-9.3438,-1.35524zM140.45274,61.26911l-4.1784,8.45443l-9.3438,1.35524l6.7611,6.58093l-1.5957,9.2914l8.3568,-4.38729l8.3568,4.38729l-1.5957,-9.2914l6.76038,-6.58093l-9.34308,-1.35524zM76.6117,71.62288v4.81008c0,1.8637 1.51649,3.38019 3.38019,3.38019h12.01695c1.8637,0 3.38019,-1.51649 3.38019,-3.38019v-4.81008c-2.84168,1.56344 -5.89325,2.52134 -9.10979,2.85762c-0.18009,0.01544 -0.37766,0.01544 -0.55774,0c-3.21691,-0.33628 -6.26812,-1.29419 -9.10979,-2.85762zM81.47848,83.56876v20.3881h9.04303v-20.3881zM13.52148,97.65014l-4.1784,8.45442l-9.34308,1.35596l6.7611,6.58021l-1.59642,9.2914l8.3568,-4.38657l8.3568,4.38657l-1.5957,-9.2914l6.76038,-6.58021l-9.34308,-1.35596zM158.47851,97.65014l-4.1784,8.45442l-9.34308,1.35596l6.76038,6.58021l-1.5957,9.2914l8.3568,-4.38657l8.35681,4.38657l-1.59642,-9.2914l6.7611,-6.58021l-9.34308,-1.35596zM70.41049,107.71247v6.49336h31.17902v-6.49336zM61.58998,117.96144v30.92204h48.82005v-30.92204zM3.49504,141.27177l5.59034,8.45371c0.4153,0.62809 0.4153,1.4428 0,2.07089l-5.59034,8.45371h14.85949v-9.4888c0,-1.03715 0.84103,-1.87781 1.8778,-1.87781h11.31492v-7.61171zM140.45202,141.27177v7.61171h11.31492c1.03715,0 1.8778,0.84103 1.8778,1.87781v9.4888h14.85949l-5.58963,-8.45371c-0.4153,-0.62809 -0.4153,-1.4428 0,-2.07089l5.58963,-8.45371zM22.11014,152.63837v19.36163h127.77971v-19.36163z">
+                                                                        </path>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="col-9 my-auto">
+                                                            <h3>
+                                                                ₹ 50,000 Lakh
+                                                            </h3>
+                                                            <h6>
+                                                                + Participation certificates
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <div class="card border-primary">
+                                                <span class="winner-type">
+                                                    2<sup>nd</sup> Runner(s)-up Prize
+                                                </span>
+                                                <div class="card-body py-4">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                width="80" height="80" viewBox="0 0 172 172"
+                                                                style=" fill:#000000;">
+                                                                <g fill="none" fill-rule="nonzero" stroke="none"
+                                                                    stroke-width="1" stroke-linecap="butt"
+                                                                    stroke-linejoin="miter" stroke-miterlimit="10"
+                                                                    stroke-dasharray="" stroke-dashoffset="0"
+                                                                    font-family="none" font-weight="none"
+                                                                    font-size="none" text-anchor="none"
+                                                                    style="mix-blend-mode: normal">
+                                                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                                    <g fill="#3498db">
+                                                                        <path
+                                                                            d="M49.57304,0c-1.03715,0 -1.87781,0.84103 -1.87781,1.8778c0,1.03715 0.84103,1.8778 1.87781,1.8778h5.13597c0.06432,1.35285 0.18175,3.36626 0.38977,5.85953c-12.91286,0.50424 -21.36658,4.93637 -22.80212,12.07437c-1.48038,7.36072 4.92456,15.20336 16.31809,19.97967c10.93376,4.58373 15.48345,9.50568 17.37472,12.82807c2.35214,3.63736 -0.07717,9.89408 -4.57894,9.52325c-1.59651,-0.34731 -3.34304,-2.10104 -5.05055,-5.07208c-0.51637,-0.89896 -1.66363,-1.20942 -2.56332,-0.69269c-0.89932,0.51674 -1.20942,1.66436 -0.69269,2.56332c2.74685,4.56498 5.10281,6.83719 8.89086,7.02095c4.05964,-0.16796 7.05703,-3.19475 8.18238,-6.86519c4.10227,5.33862 9.28018,9.04056 15.8228,9.7587c6.51579,-0.7152 11.67765,-4.38933 15.77183,-9.69266c1.10844,3.70131 4.11709,6.76395 8.20319,6.93338c3.78878,-0.1845 6.1429,-2.45415 8.89086,-7.02023c0.51674,-0.89896 0.20735,-2.04658 -0.69197,-2.56332c-0.89896,-0.5171 -2.04767,-0.20626 -2.56403,0.69269c-1.7075,2.97104 -3.45404,4.72441 -5.05055,5.07208c-4.50103,0.37193 -6.93218,-5.88663 -4.57895,-9.52325c1.89126,-3.32203 6.44096,-8.24472 17.37472,-12.82808c11.39905,-4.77851 17.80817,-12.62394 16.32743,-19.98613c-1.4348,-7.13396 -9.88544,-11.56404 -22.79279,-12.06791c0.215,-2.55464 0.33584,-4.61737 0.40126,-5.99447h5.13597c1.03715,0 1.87781,-0.84103 1.87781,-1.8778c0,-1.03678 -0.84103,-1.8778 -1.87781,-1.8778zM55.44979,13.36069c0.88536,8.54928 2.71619,20.54667 6.46895,31.37642c-3.18274,-2.37235 -7.13801,-4.55524 -11.85184,-6.5314c-9.52211,-3.99165 -15.18341,-10.33096 -14.08856,-15.77542c0.84052,-4.17909 6.42628,-8.62673 19.47145,-9.06959zM116.53657,13.49493c11.01939,0.38957 18.40288,3.78735 19.46428,9.06385c1.09521,5.44593 -4.57027,11.78803 -14.09789,15.78189c-4.72485,1.98057 -8.6884,4.16966 -11.87481,6.54862c3.76856,-10.81248 5.61351,-22.81384 6.50843,-31.39436zM86,15.98287c0.68777,0 1.37541,0.34577 1.68615,1.03653l3.91712,8.00005l8.75448,1.28274c1.49581,0.16979 2.15104,2.17764 1.0437,3.19715l-6.34261,6.23207l1.49808,8.80328c0.30284,1.48111 -1.42074,2.72519 -2.72985,1.97471l-7.82706,-4.14754l-7.82706,4.14754c-1.31095,0.75121 -3.03195,-0.49433 -2.72985,-1.97471l1.49808,-8.80328l-6.34333,-6.23207c-1.10771,-1.01987 -0.45174,-3.02735 1.0437,-3.19715l8.75447,-1.28274l3.91712,-8.00005c0.31092,-0.69076 0.99909,-1.03653 1.68686,-1.03653zM86,22.11445l-2.66668,5.44535c-0.27233,0.55643 -0.80144,0.94289 -1.4141,1.03294l-5.99232,0.87717l4.34637,4.27028c0.43809,0.43037 0.63768,1.04817 0.53477,1.65385l-1.02289,6.01027l5.33552,-2.82675c0.54981,-0.29144 1.20884,-0.29144 1.75865,0l5.33552,2.82675l-1.02289,-6.01027c-0.10291,-0.60604 0.09632,-1.22383 0.53477,-1.65456l4.34637,-4.26956l-5.99232,-0.87789c-0.61266,-0.08968 -1.14176,-0.47579 -1.4141,-1.03222zM31.54726,61.26911l-4.1784,8.45443l-9.34308,1.35524l6.76038,6.58093l-1.5957,9.2914l8.3568,-4.38729l8.3568,4.38729l-1.5957,-9.2914l6.7611,-6.58093l-9.3438,-1.35524zM140.45274,61.26911l-4.1784,8.45443l-9.3438,1.35524l6.7611,6.58093l-1.5957,9.2914l8.3568,-4.38729l8.3568,4.38729l-1.5957,-9.2914l6.76038,-6.58093l-9.34308,-1.35524zM76.6117,71.62288v4.81008c0,1.8637 1.51649,3.38019 3.38019,3.38019h12.01695c1.8637,0 3.38019,-1.51649 3.38019,-3.38019v-4.81008c-2.84168,1.56344 -5.89325,2.52134 -9.10979,2.85762c-0.18009,0.01544 -0.37766,0.01544 -0.55774,0c-3.21691,-0.33628 -6.26812,-1.29419 -9.10979,-2.85762zM81.47848,83.56876v20.3881h9.04303v-20.3881zM13.52148,97.65014l-4.1784,8.45442l-9.34308,1.35596l6.7611,6.58021l-1.59642,9.2914l8.3568,-4.38657l8.3568,4.38657l-1.5957,-9.2914l6.76038,-6.58021l-9.34308,-1.35596zM158.47851,97.65014l-4.1784,8.45442l-9.34308,1.35596l6.76038,6.58021l-1.5957,9.2914l8.3568,-4.38657l8.35681,4.38657l-1.59642,-9.2914l6.7611,-6.58021l-9.34308,-1.35596zM70.41049,107.71247v6.49336h31.17902v-6.49336zM61.58998,117.96144v30.92204h48.82005v-30.92204zM3.49504,141.27177l5.59034,8.45371c0.4153,0.62809 0.4153,1.4428 0,2.07089l-5.59034,8.45371h14.85949v-9.4888c0,-1.03715 0.84103,-1.87781 1.8778,-1.87781h11.31492v-7.61171zM140.45202,141.27177v7.61171h11.31492c1.03715,0 1.8778,0.84103 1.8778,1.87781v9.4888h14.85949l-5.58963,-8.45371c-0.4153,-0.62809 -0.4153,-1.4428 0,-2.07089l5.58963,-8.45371zM22.11014,152.63837v19.36163h127.77971v-19.36163z">
+                                                                        </path>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="col-9 my-auto">
+                                                            <h3>
+                                                                ₹ 25,000 Lakh
+                                                            </h3>
+                                                            <h6>
+                                                                + Participation certificates
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PARTNERS -->
+                        <div class="position-relative">
+                            <div class="linker" id="pills-partner"></div>
+                            <div class="partner-section">
+                                <div class="container-fluid">
+                                    <h3 class="section-heading">
+                                        Partners
+                                    </h3>
+
+                                    <div class="row px-4 mt-4">
+                                        <div class="col-12 tba-section text-center">
+                                            <h3 class="text-capitalize">
+                                                To be announced
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="row mt-4">
+                                    <div class="col-12">
+                                        <img class="partner-logo" src="https://uilogos.co/img/uilogos-logo.svg" alt="">
+                                    </div>
+                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ -->
+                        <div class="mt-5 position-relative">
+                            <div class="linker" id="pills-faq"></div>
+                            <div class="faq-section">
+                                <div class="container-fluid">
+                                    <h3 class="section-heading">
+                                        FAQ
+                                    </h3>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h2 class="clearfix mb-0">
+                                                            <a class="btn btn-link" data-toggle="collapse"
+                                                                data-target="#collapseOne" aria-expanded="true"
+                                                                aria-controls="collapseOne"><i
+                                                                    class="fa fa-chevron-circle-down"></i>
+                                                                Who can participate in Symphony Coolathon?
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseOne" class="collapse show"
+                                                        aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            The Symphony Coolathon is open to students, technologists,
+                                                            freelancers, and the professional developer community.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h2 class="mb-0">
+                                                            <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                                data-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="collapseTwo"><i
+                                                                    class="fa fa-chevron-circle-down"></i>
+                                                                What is the cost of participating in Symphony Coolathon?
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            There is no participation fee.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingThree">
+                                                        <h2 class="mb-0">
+                                                            <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                                data-target="#collapseThree" aria-expanded="false"
+                                                                aria-controls="collapseThree"><i
+                                                                    class="fa fa-chevron-circle-down"></i>
+                                                                Do we need to have the entire idea fully working?
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseThree" class="collapse"
+                                                        aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            The entry should be functional for review by the judges.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFour">
+                                                        <h2 class="mb-0">
+                                                            <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                                data-target="#collapseFour" aria-expanded="false"
+                                                                aria-controls="collapseFour"><i
+                                                                    class="fa fa-chevron-circle-down"></i>
+                                                                A fully developed application needs to have a solid
+                                                                backend for
+                                                                data storage like SQL, SharePoint etc. As it is an
+                                                                online hackathon, is it
+                                                                acceptable to show only the prototype?
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseFour" class="collapse"
+                                                        aria-labelledby="headingFour" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Yes, you are required to submit a prototype. If you use any
+                                                            database like SQL Server
+                                                            or PostgreSQL, you can also submit a database dump along
+                                                            with your submission.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 d-lg-block d-none border-left">
+                        <div class="right-sticky">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card border-primary">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <img class="mb-3" src="./assets/images/logo-img.png" alt="" width="70">
+                                                <h6 class="d-inline-block pl-2">
+                                                    Symphony Coolathon
+                                                </h6>
+                                            </div>
+
+                                            <div class="row mb-2">
+                                                <div class="col-1">
+                                                    <i class="fa fa-stopwatch"></i>
+                                                </div>
+                                                <div class="col-10">
+                                                    <strong>
+                                                        Registration Deadline:
+                                                    </strong> <br>
+                                                    TBA
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-1">
+                                                    <i class="fa fa-rupee-sign"></i>
+                                                </div>
+                                                <div class="col-10">
+                                                    <strong>
+                                                        Free Registration
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-1">
+                                                    <i class="fa fa-users"></i>
+                                                </div>
+                                                <div class="col-10">
+                                                    <strong>
+                                                        1-5 Member Team
+                                                    </strong>
+                                                </div>
+                                            </div>
+
+                                            <a name="" id="" class="btn btn-primary btn-block disabled mt-3"
+                                                href="javascript:void(0)" role="button">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>
+                        © 2021 Company Name
+                    </p>
+                </div>
+                <div class="col-md-6 t_c">
+                    <a href="">
+                        Privacy & Policy
+                    </a>
+                    <a href="">
+                        Terms & Conditions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL AREA -->
+
+    <!-- CHALLENGE 1 -->
+    <div id="challenge-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="my-modal-title">Challenge Details</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="./assets/images/logo-img.png" alt="" width="80">
+                        <h5 class="ml-3">
+                            DirectX
+                        </h5>
+                    </div>
+                    <p>
+                        Symphony delivers market-leading products that are a wonderful combination of design innovation,
+                        energy efficiency, distinctive styling, and customer-centricity. As a pioneer in the air-cooling
+                        industry, Symphony has continually been at the forefront of innovation. From introducing the
+                        first-ever plastic body air cooler to equipping them with world-class features viz. cool flow
+                        dispenser, i-Pure technology, touch panel, pop-up control panel, easy-fill, just to name a few,
+                        Symphony has been a trendsetter in the market.
+                    </p>
+                    <p>
+                        Keeping in line with the trend of innovation and its vision to bring disrupting technology into
+                        air coolers Symphony is looking forward to having the best of design solutions that are not only
+                        too good to be true but also feasible technologically. The teams will be required to come up
+                        with prototypes in the later stage of the hackathon once their designs are approved.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    Tags:
+                    <span class="badge badge-primary">i-Pure</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").addClass("highlight");
+            });
+
+            // Highlight open collapsed element 
+            $(".card-header .btn").click(function () {
+                $(".card-header").not($(this).parents()).removeClass("highlight");
+                $(this).parents(".card-header").toggleClass("highlight");
+            });
+        });
+    </script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 1,
+            breakpoints: {
+                575: {
+                    slidesPerGroup: 2,
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1440: {
+                    slidesPerGroup: 1,
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>

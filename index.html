@@ -1,52 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>incubepro</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
+    <title>IncubePro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- SPLIDER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <!-- HOME CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body class="min-vh-100 d-flex flex-column pb-0">
+<body>
+    <!-- 
+        ==============================================
+        ==============================================
+                            NAVBAR
+        ==============================================
+        ==============================================
+     -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top bg-transparent">
+        <a class="navbar-brand" href="#">IncubePro</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:help@incubepro.com?subject=Contacting for Organizing Hackathon">
+                        Organize Hackathon
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a name="" id="" class="btn btn-login btn-disable" href="javascript:void(0);" role="button"
+                        data-toggle="tooltip" data-placement="bottom" title="Coming Soon">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-dark bg-transparenet">
-                <a class="navbar-brand" href="#">
-                    <h3>
-                        IncubePro
-                    </h3>
-                </a>
-                <!-- <span class="navbar-text ml-auto d-none d-sm-inline-block">978-130-5444 </span> -->
-                <span class="navbar-text d-none d-sm-inline-block">support@incubepro.com</span>
-            </nav>
+    <!-- 
+        ==============================================
+        ==============================================
+                        HERO SECTION
+        ==============================================
+        ==============================================
+     -->
+
+    <section class="wrapper">
+        <div class="container-fluid hero-section">
+            <div class="row justify-content-center content-area">
+                <div class="col-xl-5 col-lg-5 col-md-6">
+                    <h2>
+                        Building Better Products Shouldn't Take Forever
+                    </h2>
+                    <p>
+                        We help companies/Individuals innovate faster and build better products, using real user rapid
+                        iterations.
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="container button-area">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a name="" id="" class="btn btn-warning btn-block"
+                            href="mailto:help@incubepro.com?subject=Contacting for Product Evangelism" role="button">
+                            Product Evangelism
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a name="" id="" class="btn btn-warning btn-block"
+                            href="mailto:help@incubepro.com?subject=Contacting for Product Hackathon" role="button">
+                            Hackathon / TechCamp /Workshop
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a name="" id="" class="btn btn-warning btn-block"
+                            href="mailto:help@incubepro.com?subject=Contacting for Company Innovation" role="button">
+                            Company Innovation Platform
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <main class="my-auto">
-        <div class="container">
-            <h1 class="page-title">IncubePro is coming Soon</h1>
-            <p class="page-description">
-                To offer one of a kind developer solutions in varied domains, we are cultivating a mutual platform for
-                organizations & developers.
-            </p>
-            <p class="page-description margin-bottom">
-                Stay tuned to witness the efficiency of your thoughts and ideas ascend in a harmonic way.
-            </p>
-            <p>Compassion | Innovation | Trust</p>
+    </section>
+
+
+    <!-- 
+        ==============================================
+        ==============================================
+                    ONGOING EVENTS
+        ==============================================
+        ==============================================
+     -->
+
+    <!-- <div class="container pt-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-6">
+                <img class="w-100" src="./assets/img/ongoing-section.png" alt="">
+            </div>
         </div>
-    </main>
+        <div class="row justify-content-center text-center my-5">
+            <div class="col-md-5">
+                <h2>
+                    Ongoing Challenges
+                </h2>
+                <p>
+                    Start your hackathon journey now
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-4 mb-5">
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="card hack-event-card">
+                            <span class="hack-for">
+                                For Developers
+                            </span>
+                            <img class="card-img-top" src="https://storage.googleapis.com/incind/HomePage8AS4zUv.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <h5>Challange Name</h5>
+                                <p class="hack-description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, officiis?
+                                </p>
+                                <p class="reg-fee">
+                                    <span>Registration Fee :</span> 2000/-
+                                </p>
+                                <div class="clearfix">
+                                    <div class="float-left">
+                                        <p class="last-date">
+                                            Last Date : 11 July 2021
+                                        </p>
+                                    </div>
+                                    <div class="float-right">
+                                        <p class="hack-type">
+                                            Status : <span class="text-success">ONLINE</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a name="" id="" class="btn btn-warning btn-block" href="#" role="button">
+                                    Register Now
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- FOOTER -->
     <footer>
         <style>
             footer {
                 padding: 1rem;
                 background: #000;
-                position: absolute;
-                width: 100%;
-                bottom: 0;
             }
 
             footer p {
@@ -93,6 +224,73 @@
             </div>
         </div>
     </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <!-- SPLIDER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                perPage: 3,
+                updateOnMove: true,
+                pagination: true,
+                // focus: 'center',
+                // focus: 4,
+                padding: '10%',
+                gap: '2%',
+                breakpoints: {
+                    1440: {
+                        perPage: 3,
+                        padding: '5%',
+                        margin: '2%'
+                    },
+                    1024: {
+                        perPage: 2,
+                        padding: '5%',
+                        margin: '2%'
+                    },
+                    575: {
+                        perPage: 1,
+                        padding: '5%',
+                        margin: '2%'
+                    }
+                }
+            }).mount();
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            var scrSize = $(window).innerWidth;
+            if (scrSize >= 794) {
+                if (scroll >= 100) {
+                    $(".navbar").removeClass("bg-transparent");
+                    $(".navbar").addClass("shadow-sm");
+                } else {
+                    $(".navbar").addClass("bg-transparent");
+                    $(".navbar").removeClass("shadow-sm");
+                }
+            }
+
+        });
+    </script>
 </body>
 
 </html>

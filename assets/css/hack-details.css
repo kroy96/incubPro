@@ -1,0 +1,316 @@
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-item {
+  padding: 0.5rem 0.75rem;
+}
+
+.navbar-nav .active > .nav-link {
+  color: #F2C034 !important;
+  font-weight: 600;
+}
+
+.btn-signup {
+  background-color: #F2C034;
+  border: 1px solid #F2C034;
+  padding: 0.5rem 1rem;
+}
+
+.btn-login {
+  color: #F2C034;
+  border: 1px solid #F2C034;
+  padding: 0.5rem 1rem;
+}
+
+.btn-login:hover {
+  color: #F2C034;
+}
+
+.orgd-wrapper {
+  margin-top: 75px;
+  padding: 13rem 5rem;
+  background: url("../img/org-hack-hero.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80% 80%;
+}
+
+.orgd-wrapper h1 {
+  font-size: 3rem;
+}
+
+.orgd-wrapper p {
+  font-size: 1.5rem;
+}
+
+.orgd-wrapper .btn-theme {
+  background-color: #F2C034;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.orgd-hack-type {
+  padding: 7rem 0;
+}
+
+.orgd-hack-type .card {
+  padding: 1.5rem 0.5rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.orgd-hack-type .card h6 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #F2C034;
+}
+
+.orgd-hack-type .card h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.orgd-hack-type .card p {
+  font-size: 0.9rem;
+}
+
+.orgd-hack-type .card .decor {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: 45%;
+  opacity: 0.8;
+}
+
+.orgd-hack-type .active {
+  border: 1.37852px solid #2F80ED;
+  -webkit-box-shadow: 0px 6.89258px 20.6777px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6.89258px 20.6777px rgba(0, 0, 0, 0.1);
+}
+
+.orgd-hack-type .active h4 {
+  color: #F2C034;
+}
+
+.orgd-hack-type .active h6 {
+  color: #000;
+}
+
+.orgd-external-hack h5 {
+  margin-bottom: 0;
+  color: #F2C034;
+}
+
+.orgd-external-hack h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.orgd-external-hack .bg-theme {
+  background-color: #F2C034;
+}
+
+.orgd-external-hack .details {
+  background-color: #D1DCE7;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.orgd-external-hack .details .col-md-4 {
+  position: relative;
+  padding: 2.5rem 1.5rem;
+}
+
+.orgd-external-hack .details .col-md-4 h4 {
+  font-size: 1.5rem;
+}
+
+.orgd-external-hack .details .col-md-4 p {
+  font-size: 0.9rem;
+}
+
+.orgd-external-hack .details .col-md-4 .decor {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  opacity: 0.6;
+}
+
+.interest-content h3 {
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.interest-content p {
+  display: inline-block;
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+}
+
+.interest-content p:nth-of-type(1) {
+  width: 120px;
+  border-bottom: 3px solid #8676FF;
+}
+
+.interest-content p:nth-of-type(1) span {
+  display: block;
+  width: 50%;
+}
+
+.interest-content p:nth-of-type(2) {
+  width: 150px;
+  border-bottom: 3px solid #FF708B;
+}
+
+.interest-content p:nth-of-type(2) span {
+  display: block;
+  width: 50%;
+}
+
+.interest-content p:nth-of-type(3) {
+  width: 250px;
+  border-bottom: 3px solid #FFBA69;
+}
+
+.interest-content p:nth-of-type(3) span {
+  display: block;
+  width: 70%;
+}
+
+.orgd-solution-path {
+  padding: 8rem 0;
+}
+
+.orgd-solution-path .form-group {
+  width: 50%;
+}
+
+.orgd-solution-path .pathway {
+  position: relative;
+  margin: 5rem 0;
+}
+
+.orgd-solution-path .pathway .spot {
+  width: 200px;
+}
+
+.orgd-solution-path .pathway .spot img {
+  width: 80%;
+}
+
+.orgd-solution-path .pathway .spot h5 {
+  font-size: 1rem;
+}
+
+.orgd-solution-path .pathway .spot p {
+  font-size: 0.9rem;
+}
+
+.orgd-solution-path .pathway .spot .btn-outline-secondary {
+  background-color: #fff !important;
+}
+
+.orgd-solution-path .pathway .spot .btn-outline-secondary:hover {
+  color: #6C757D !important;
+}
+
+@media (min-width: 991.98px) {
+  .orgd-solution-path .pathway .spot {
+    position: absolute;
+  }
+  .orgd-solution-path .pathway .spot2,
+  .orgd-solution-path .pathway .spot3,
+  .orgd-solution-path .pathway .spot4,
+  .orgd-solution-path .pathway .spot5,
+  .orgd-solution-path .pathway .spot6 {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .orgd-solution-path .pathway .spot2 .content,
+  .orgd-solution-path .pathway .spot3 .content,
+  .orgd-solution-path .pathway .spot4 .content,
+  .orgd-solution-path .pathway .spot5 .content,
+  .orgd-solution-path .pathway .spot6 .content {
+    margin-left: 2rem;
+  }
+  .orgd-solution-path .pathway .spot1 {
+    left: 0;
+    top: 0;
+  }
+  .orgd-solution-path .pathway .spot2 {
+    top: 6rem;
+    left: 30%;
+  }
+  .orgd-solution-path .pathway .spot3 {
+    right: 0;
+    top: 20rem;
+  }
+  .orgd-solution-path .pathway .spot4 {
+    left: 30%;
+    top: 31rem;
+  }
+  .orgd-solution-path .pathway .spot5 {
+    left: 0%;
+    top: 45rem;
+  }
+  .orgd-solution-path .pathway .spot6 {
+    left: 30%;
+    top: 56rem;
+  }
+  .orgd-solution-path .pathway .spot7 {
+    right: 0%;
+    top: 55rem;
+  }
+  .orgd-solution-path .pathway .line-1 {
+    position: absolute;
+    height: 400px;
+    width: 63%;
+    left: 15%;
+    top: 14rem;
+    border: 1px solid #6C757D;
+    border-left: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0;
+    z-index: -1;
+  }
+  .orgd-solution-path .pathway .line-2 {
+    position: absolute;
+    height: 400px;
+    width: 63%;
+    left: 14%;
+    top: 622px;
+    border: 1px solid #6C757D;
+    border-right: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0;
+    z-index: -1;
+  }
+}
+/*# sourceMappingURL=hack-details.css.map */

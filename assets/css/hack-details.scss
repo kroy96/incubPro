@@ -1,0 +1,336 @@
+// VARIABLE
+$primary: #F2C034;
+
+// NAVBAR
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-item {
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-nav .active>.nav-link {
+    color: $primary !important;
+    font-weight: 600;
+}
+
+.btn-signup {
+    background-color: $primary;
+    border: 1px solid $primary;
+    padding: 0.5rem 1rem;
+}
+
+.btn-login {
+    color: $primary;
+    border: 1px solid $primary;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+
+// HERO SECTION
+.orgd-wrapper {
+    margin-top: 75px;
+    padding: 13rem 5rem;
+    background: url('../img/org-hack-hero.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80% 80%;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .btn-theme {
+        background-color: $primary;
+        padding: 0.75rem 1.75rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+// HACKATHON TYPE
+
+.orgd-hack-type {
+    padding: 7rem 0;
+
+    .card {
+        padding: 1.5rem 0.5rem;
+
+        h6 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: $primary;
+        }
+
+        h4 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #000;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        .decor {
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            width: 45%;
+            opacity: 0.8;
+        }
+
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .active {
+        border: 1.37852px solid #2F80ED;
+        box-shadow: 0px 6.89258px 20.6777px rgba(0, 0, 0, 0.1);
+
+        h4 {
+            color: $primary;
+        }
+
+        h6 {
+            color: #000;
+        }
+    }
+}
+
+// EXTERNAL HACK DIV
+
+.orgd-external-hack {
+    h5 {
+        margin-bottom: 0;
+        color: $primary;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .bg-theme {
+        background-color: $primary;
+    }
+
+    .details {
+        background-color: #D1DCE7;
+        padding-top: 2rem;
+        margin-top: 2rem;
+
+        .col-md-4 {
+            position: relative;
+            padding: 2.5rem 1.5rem;
+
+            h4 {
+                font-size: 1.5rem;
+
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .decor {
+                position: absolute;
+                right: 1.5rem;
+                top: 1rem;
+                opacity: 0.6;
+            }
+        }
+
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+}
+
+.interest-content {
+    h3 {
+        margin-bottom: 0.5rem;
+        padding-top: 2rem;
+    }
+
+    p {
+        display: inline-block;
+        text-transform: capitalize;
+        padding-bottom: 0.5rem;
+
+        &:nth-of-type(1) {
+            width: 120px;
+            border-bottom: 3px solid #8676FF;
+
+            span {
+                display: block;
+                width: 50%;
+            }
+        }
+
+        &:nth-of-type(2) {
+            width: 150px;
+            border-bottom: 3px solid #FF708B;
+
+            span {
+                display: block;
+                width: 50%;
+            }
+        }
+
+        &:nth-of-type(3) {
+            width: 250px;
+            border-bottom: 3px solid #FFBA69;
+
+            span {
+                display: block;
+                width: 70%;
+            }
+        }
+    }
+}
+
+// SOLUTION SECTION
+
+.orgd-solution-path {
+    padding: 8rem 0;
+
+    .form-group {
+        width: 50%;
+    }
+
+    .pathway {
+        position: relative;
+        margin: 5rem 0;
+
+        .spot {
+            width: 200px;
+
+            img {
+                width: 80%;
+            }
+
+            h5 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .btn-outline-secondary {
+                background-color: #fff !important;
+
+                &:hover {
+                    color: #6C757D !important;
+                }
+            }
+        }
+
+        @media(min-width:991.98px) {
+            .spot {
+                position: absolute;
+            }
+
+            .spot2,
+            .spot3,
+            .spot4,
+            .spot5,
+            .spot6 {
+                width: 400px;
+                display: flex;
+                align-items: flex-start;
+
+                .content {
+                    margin-left: 2rem;
+                }
+            }
+
+            .spot1 {
+                left: 0;
+                top: 0;
+            }
+
+            .spot2 {
+                top: 6rem;
+                left: 30%;
+            }
+
+            .spot3 {
+                right: 0;
+                top: 20rem;
+            }
+
+            .spot4 {
+                left: 30%;
+                top: 31rem;
+            }
+
+            .spot5 {
+                left: 0%;
+                top: 45rem;
+            }
+
+            .spot6 {
+                left: 30%;
+                top: 56rem;
+            }
+
+            .spot7 {
+                right: 0%;
+                top: 55rem;
+            }
+
+            .line-1 {
+                position: absolute;
+                height: 400px;
+                width: 63%;
+                left: 15%;
+                top: 14rem;
+                border: 1px solid #6C757D;
+                border-left: 0;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0;
+                z-index: -1;
+            }
+
+            .line-2 {
+                position: absolute;
+                height: 400px;
+                width: 63%;
+                left: 14%;
+                top: 622px;
+                border: 1px solid #6C757D;
+                border-right: 0;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
